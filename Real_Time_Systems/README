@@ -1,0 +1,17 @@
+This code is a python script which takes an input file that contains schedule table. 
+
+Steps used to find ideal frame size: 
+- Find potential frame sizes using two frame constarints: 	
+	i) H/f-floor(H/f)=0 for atleast one f value 
+	ii)2f-gcd(pi,f)<=Di for all i values. 
+	Here, f= frame size, H= hyper period. 
+- Utilized the concept of Network flow algorithm for computing Static schedules. 
+- For finding max-flow in the network graph, I used adjacency matrix to determine it. 
+
+Input1 has synchronous tasks. 
+Input2 has asynchronous tasks. 
+
+To run: 
+	-python code1.py
+	-python code2.py
+					****
